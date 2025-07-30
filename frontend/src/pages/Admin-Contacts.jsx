@@ -15,13 +15,11 @@ const AdminContacts = () => {
           } 
   })
 
-  
  // console.log(response)
   const data = await response.json();
     if(response.ok){
       setContactData(data);
     }
-
 
   } catch (error) {
       console.log(error)
@@ -90,13 +88,10 @@ const AdminContacts = () => {
   })}
           </tbody>
         </table>
-     
       </div>
     </section>
   </div>
   )
 }
-
-
 
 export default AdminContacts;
