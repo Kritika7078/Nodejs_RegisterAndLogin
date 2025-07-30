@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
 export const AuthContext = createContext();
-
+const BASE_URL = import.meta.env.VITE_BACKEND_URL;
 // eslint-disable-next-line react/prop-types
 export const AuthProvider = ({ children }) => {
   
@@ -31,7 +31,7 @@ export const AuthProvider = ({ children }) => {
   const userAuthentication = async () => {
     try {
       setIsLoading(true);
-      const response = await fetch("http://localhost:5000/api/auth/user", {
+      const response = await fetch(`${BASE_URL}/api/auth/user`, {
         method: "GET",
         headers: {
           Authorization: authorisationToken,
@@ -58,7 +58,7 @@ export const AuthProvider = ({ children }) => {
   //to fetch services data from database
   const getServices = async ()=>{
     try {
-      const response = await fetch("http://localhost:5000/api/data/service",{
+      const response = await fetch(`${BASE_URL}/api/data/service`,{
         method:"GET",
       })
       if(response.ok){

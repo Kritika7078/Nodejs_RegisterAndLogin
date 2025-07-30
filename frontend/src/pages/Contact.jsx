@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useAuth } from "../store/auth";
+const BASE_URL = import.meta.env.VITE_BACKEND_URL;
 
 export const Contact = () => {
 
@@ -40,7 +41,7 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:5000/api/form/contact",{
+      const response = await fetch(`${BASE_URL}/api/form/contact`,{
         method:"POST",
         headers:{
           'Content-Type':"application/json"

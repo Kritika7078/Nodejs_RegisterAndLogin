@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useAuth } from '../store/auth';
 import { toast } from 'react-toastify';
+const BASE_URL = import.meta.env.VITE_BACKEND_URL;
 
 const AdminContacts = () => {
   const [contactData,setContactData]=useState([])
@@ -8,7 +9,7 @@ const AdminContacts = () => {
 
   const getContactsData= async ()=>{
     try {
-      const response = await fetch(`http://localhost:5000/api/admin/contacts`,{
+      const response = await fetch(`${BASE_URL}/api/admin/contacts`,{
           method:"GET",
           headers:{
             Authorization:authorisationToken,
@@ -29,7 +30,7 @@ const AdminContacts = () => {
   const deleteContact= async(id)=>{
    
     try {
-      const response = await fetch(`http://localhost:5000/api/admin/contacts/delete/${id}`,{
+      const response = await fetch(`${BASE_URL}/api/admin/contacts/delete/${id}`,{
         method:"DELETE",
         headers:{
           Authorization:authorisationToken,

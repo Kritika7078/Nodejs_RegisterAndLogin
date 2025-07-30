@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../store/auth";
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+const BASE_URL = import.meta.env.VITE_BACKEND_URL;
 
 export const Login = () => {
 
@@ -30,7 +31,7 @@ export const Login = () => {
   const handleSubmit = async (event)=> {
     event.preventDefault()
     try {
-      const response=await fetch(URL,{
+      const response=await fetch(`${BASE_URL}/api/auth/login`,{
         method:"POST",
         headers:{
           "Content-Type":"application/json"

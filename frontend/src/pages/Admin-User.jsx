@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useAuth } from '../store/auth'
 import { Link } from 'react-router-dom';
 
+const BASE_URL = import.meta.env.VITE_BACKEND_URL;
 
 const AdminUser = () => {
   const [users,setUsers]=useState([])
@@ -11,7 +12,7 @@ const AdminUser = () => {
 
   const getAllUsersData = async()=>{
     try {
-      const response = await fetch("http://localhost:5000/api/admin/users",{
+      const response = await fetch(`${BASE_URL}/api/admin/users`,{
         method:"GET",
         headers:{
           Authorization:authorisationToken,
@@ -28,7 +29,7 @@ const AdminUser = () => {
   const deleteUser= async(id)=>{
     console.log(id);
     try {
-      const response = await fetch(`http://localhost:5000/api/admin/users/delete/${id}`,{
+      const response = await fetch(`${BASE_URL}/api/admin/users/delete/${id}`,{
         method:"DELETE",
         headers:{
           Authorization:authorisationToken,

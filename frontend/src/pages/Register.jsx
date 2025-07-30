@@ -2,6 +2,7 @@ import { useState } from "react";
 import {useNavigate} from "react-router-dom"
 import { useAuth } from "../store/auth";
 import { toast } from "react-toastify";
+const BASE_URL = import.meta.env.VITE_BACKEND_URL;
 
 export const Register = () => {
   const navigate=useNavigate();
@@ -33,7 +34,7 @@ export const Register = () => {
     console.log(user);
   try {
    
-      const response=await fetch(URL,{
+      const response=await fetch(`${BASE_URL}/api/auth/register`,{
         method:"POST",
         headers:{
           "Content-Type":"application/json",

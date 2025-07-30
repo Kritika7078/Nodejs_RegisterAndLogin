@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useAuth } from "../store/auth";
 import { toast } from "react-toastify";
 
+const BASE_URL = import.meta.env.VITE_BACKEND_URL;
 
 export const AdminUpdate = ()=>{
     const [data,setData] = useState({
@@ -15,7 +16,7 @@ export const AdminUpdate = ()=>{
 
     const getSingleUserData = async ()=>{
         try {
-            const response = await fetch(`http://localhost:5000/api/admin/users/${params.id}`,{
+            const response = await fetch(`${BASE_URL}/api/admin/users/${params.id}`,{
                 method:"GET",
                 headers:{
                   Authorization:authorisationToken,
@@ -47,7 +48,7 @@ export const AdminUpdate = ()=>{
         e.preventDefault();
 
         try {
-            const response = await fetch(`http://localhost:5000/api/admin/users/update/${params.id}`,{
+            const response = await fetch(`${BASE_URL}/api/admin/users/update/${params.id}`,{
                 method:"PATCH",
                 headers:{
                   "Content-Type":"application/json",
