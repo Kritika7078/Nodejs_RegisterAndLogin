@@ -62,6 +62,7 @@ body {
 .section-form form {
   background-color: #f9fbff;
   padding: 2rem;
+  height:400px;
   border-radius: 10px;
   box-shadow: var(--shadow-light);
   display: flex;
@@ -116,6 +117,8 @@ body {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: var(--shadow-light);
+  width:700px;
+  height:400px;
 }
 
 /* Responsive Fixes */
