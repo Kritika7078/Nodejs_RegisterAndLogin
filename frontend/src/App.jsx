@@ -18,11 +18,11 @@ const App = () => {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Home />} /> */}
         <Route path="/contact" element={<Contact />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/service" element={<Service />} />
+        <Route path="/" element={<Service />} />
         <Route path="/logout" element={<Logout/>}/>
         <Route path="*" element={<Error/>} />
         <Route path="/admin" element={<AdminLayout/>}>

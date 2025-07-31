@@ -58,7 +58,7 @@ export const AuthProvider = ({ children }) => {
   //to fetch services data from database
   const getServices = async ()=>{
     try {
-      const response = await fetch(`${BASE_URL}/api/data/service`,{
+      const response = await fetch(`${BASE_URL}/api/data/`,{
         method:"GET",
       })
       if(response.ok){
