@@ -68,7 +68,7 @@ export const Contact = () => {
     <>
       <section className="section-contact">
         <div className="contact-content container">
-          <h1 className="main-heading">contact us</h1>
+          <h1 className="main-heading">Contact Us</h1>
         </div>
         {/* contact page main  */}
         <div className="container grid grid-two-cols">
