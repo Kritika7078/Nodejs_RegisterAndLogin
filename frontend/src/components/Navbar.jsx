@@ -21,7 +21,7 @@ export const Navbar = () => {
                 <NavLink to="/contact"> Contact </NavLink>
                 
               </li>
-              <li><NavLink to="/service"> Service</NavLink></li>
+              {/* <li><NavLink to="/service"> Service</NavLink></li> */}
               {isLoggedIn ? (
                 <li><NavLink to="/logout"> Logout </NavLink></li>
                 ) : (
