@@ -8,8 +8,6 @@ const AdminUser = () => {
   const [users,setUsers]=useState([])
   const {authorisationToken}=useAuth();
   
-
-
   const getAllUsersData = async()=>{
     try {
       const response = await fetch(`${BASE_URL}/api/admin/users`,{

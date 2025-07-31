@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useAuth } from "../store/auth";
 const BASE_URL = import.meta.env.VITE_BACKEND_URL;
+import './Contact.css';
 
 export const Contact = () => {
 

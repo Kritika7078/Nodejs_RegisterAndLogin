@@ -6,7 +6,7 @@ const BASE_URL = import.meta.env.VITE_BACKEND_URL;
 
 export const Register = () => {
   const navigate=useNavigate();
-  const URL = "http://localhost:5000/api/auth/register"
+  // const URL = "http://localhost:5000/api/auth/register"
 
   const [user, setUser] = useState({
     username: "",

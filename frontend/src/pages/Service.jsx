@@ -1,6 +1,6 @@
 import React from 'react'
 import { useAuth } from '../store/auth';
-
+import './Service.css'
 
 const Service = () => {
 const {services} = useAuth();
