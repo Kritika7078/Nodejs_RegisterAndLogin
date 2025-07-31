@@ -3,7 +3,7 @@ import {useNavigate} from "react-router-dom"
 import { useAuth } from "../store/auth";
 import { toast } from "react-toastify";
 const BASE_URL = import.meta.env.VITE_BACKEND_URL;
-
+import './Register.css'
 export const Register = () => {
   const navigate=useNavigate();
   // const URL = "http://localhost:5000/api/auth/register"
@@ -69,19 +69,19 @@ export const Register = () => {
     <>
       <section>
         <main>
-          <div className="section-registration">
+          {/* <div className="section-registration"> */}
             <div className="container grid grid-two-cols">
-              <div className="registration-image reg-img">
+              {/* <div className="registration-image reg-img">
                 <img
                   src="/images/register.png"
                   alt="a nurse with a cute look"
                   width="400"
                   height="500"
                 />
-              </div>
+              </div> */}
               {/* our main registration code  */}
               <div className="registration-form">
-                <h1 className="main-heading mb-3">registration form</h1>
+                <h1 className="main-heading ">Registration form</h1>
                 <br />
                 <form onSubmit={handleSubmit}>
                   <div>
@@ -130,7 +130,7 @@ export const Register = () => {
                 </form>
               </div>
             </div>
-          </div>
+          {/* </div> */}
         </main>
       </section>
     </>

@@ -4,7 +4,7 @@ import { useAuth } from "../store/auth";
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 const BASE_URL = import.meta.env.VITE_BACKEND_URL;
-
+import './Login.css'
 export const Login = () => {
 
   const URL = "http://localhost:5000/api/auth/login"
@@ -78,7 +78,7 @@ export const Login = () => {
               </div>
               {/* our main registration code  */}
               <div className="registration-form">
-                <h1 className="main-heading mb-3">Login form</h1>
+                <h1 className="main-heading">Login form</h1>
                 <br />
                 <form onSubmit={handleSubmit}>
                   <div>
