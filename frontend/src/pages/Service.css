@@ -20,8 +20,9 @@
 .card {
   display: inline-flex;
   align-items: center;
+  justify-content: space-around;
   gap: 2rem;
-  width:50%;
+  width:35%;
   height:250px;
   background-color: #ffffff;
   border-radius: 1rem;
