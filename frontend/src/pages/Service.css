@@ -20,7 +20,7 @@
 .card {
   display: inline-flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   gap: 2rem;
   width:35%;
   height:250px;
@@ -30,6 +30,8 @@
   padding: 1rem;
   margin-bottom: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .card:hover {
