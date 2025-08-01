@@ -7,7 +7,7 @@ const {services} = useAuth();
 console.log(services)
   return (
     <div className='.services-page'>
-      <h1>Services we provide</h1>
+      <h1>Services we provide</h1> 
       {services.map((curEle,index)=>{
         return(
           <div className='card' key={index}>
@@ -30,5 +30,4 @@ console.log(services)
     </div>
   )
 }
-
 export default Service;
