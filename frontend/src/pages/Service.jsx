@@ -11,9 +11,9 @@ console.log(services)
       {services.map((curEle,index)=>{
         return(
           <div className='card' key={index}>
-            <div className="card-img">
+            {/* <div className="card-img">
               <img src="/images/design.png" width="200"/>
-            </div>
+            </div> */}
             <div>
               <div className='card-details'>
                 <div className='grid grid-two-col'>

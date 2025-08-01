@@ -18,9 +18,9 @@
 }
 
 .card {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-evenly;
+  display: inline;
+  /* align-items: center;
+  justify-content: space-evenly; */
   gap: 2rem;
   width:35%;
   height:250px;
