@@ -1,6 +1,8 @@
 /* Service.css */
 
 .services-page {
+    display: flex;
+  justify-content: space-between;
   padding: 2rem 3rem;
   background-color: #fdfdfd;
   min-height: 100vh;
@@ -56,8 +58,7 @@
 }
 
 .grid.grid-two-col {
-  display: flex;
-  justify-content: space-between;
+  
   margin-bottom: 0.5rem;
 }
 
