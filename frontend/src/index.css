@@ -54,7 +54,9 @@ a:hover {
 
 h1 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
   line-height: 1.2;
 }
 
