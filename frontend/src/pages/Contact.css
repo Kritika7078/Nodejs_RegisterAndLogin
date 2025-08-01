@@ -6,7 +6,7 @@
   --heading-color: #222222;
   --input-border: #cccccc;
   --input-focus: #4a90e2;
-  --button-bg: #0059c0;
+  --button-bg: #4f88c9;
   --button-hover: #357ab7;
   --shadow-light: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
@@ -20,7 +20,7 @@ body {
 }
 
 .section-contact {
-  padding: 4rem 1rem;
+  /* padding: 4rem 1rem; */
   background-color: var(--background-color);
 }
 
@@ -56,7 +56,6 @@ body {
 
 .contact-img{
     width:400px;
-    
 }
 
 .section-form form {
@@ -67,7 +66,7 @@ body {
   box-shadow: var(--shadow-light);
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  /* gap: 1.5rem; */
 }
 
 .section-form label {
@@ -94,11 +93,10 @@ body {
 .section-form textarea:focus {
   border-color: var(--input-focus);
   outline: none;
-  
 }
 
 .section-form button {
-  background-color: var(--button-bg);
+  /* background-color: var(--button-bg); */
   color: #ffffff;
   /* padding: 0.75rem 1.5rem; */
   font-size: 1rem;

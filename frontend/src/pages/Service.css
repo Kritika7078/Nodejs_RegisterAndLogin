@@ -8,7 +8,7 @@
 
 .services-page h1 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #333;
   margin-bottom: 2rem;
   font-weight: 600;
@@ -21,8 +21,8 @@
   background-color: #ffffff;
   border-radius: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  padding: 1.5rem;
-  margin-bottom: 2rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 

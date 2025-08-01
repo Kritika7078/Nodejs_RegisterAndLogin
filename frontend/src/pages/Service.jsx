@@ -6,8 +6,8 @@ const Service = () => {
 const {services} = useAuth();
 console.log(services)
   return (
-    <div>
-      <h1>services</h1>
+    <div className='.services-page'>
+      <h1>Services we provide</h1>
       {services.map((curEle,index)=>{
         return(
           <div className='card' key={index}>

@@ -66,16 +66,16 @@ export const Login = () => {
     <>
       <section>
         <main>
-          <div className="section-registration">
+          {/* <div className="section-registration"> */}
             <div className="container grid grid-two-cols">
-              <div className="registration-image reg-img">
+              {/* <div className="registration-image reg-img">
                 <img
                   src="/images/register.png"
                   alt="a nurse with a cute look"
                   width="400"
                   height="500"
                 />
-              </div>
+              </div> */}
               {/* our main registration code  */}
               <div className="registration-form">
                 <h1 className="main-heading">Login form</h1>
@@ -109,7 +109,7 @@ export const Login = () => {
                 </form>
               </div>
             </div>
-          </div>
+          {/* </div> */}
         </main>
       </section>
     </>
