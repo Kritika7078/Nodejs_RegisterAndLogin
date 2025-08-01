@@ -1,8 +1,8 @@
 /* Service.css */
 
 .services-page {
-  /* display: inline-flex;
-  justify-content: space-between; */
+  display: inline-flex;
+  justify-content: space-between;
   padding: 2rem 3rem;
   background-color: #fdfdfd;
   min-height: 100vh;
@@ -10,7 +10,7 @@
 
 .services-page h1 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: #333;
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -18,9 +18,9 @@
 }
 
 .card {
-  display: inline-flex;
+  /* display: inline-flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-evenly; */
   gap: 2rem;
   width:35%;
   height:250px;
@@ -28,7 +28,7 @@
   border-radius: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-left: 50px;
   margin-right: 50px;
