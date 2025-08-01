@@ -10,7 +10,7 @@ console.log(services)
       <h1>Services we provide</h1> 
       {services.map((curEle,index)=>{
         return(
-          <div className='card' key={index}>
+          <div className='card-service' key={index}>
             {/* <div className="card-img">
               <img src="/images/design.png" width="200"/>
             </div> */}
