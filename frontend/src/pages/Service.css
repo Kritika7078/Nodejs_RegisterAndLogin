@@ -1,8 +1,8 @@
 /* Service.css */
 
 .services-page {
-  display: inline-flex;
-  justify-content: space-between;
+  /* display: inline-flex;
+  justify-content: space-between; */
   padding: 2rem 3rem;
   background-color: #fdfdfd;
   min-height: 100vh;
@@ -21,6 +21,8 @@
   display: inline-flex;
   align-items: center;
   gap: 2rem;
+  width:50%;
+  height:250px;
   background-color: #ffffff;
   border-radius: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
