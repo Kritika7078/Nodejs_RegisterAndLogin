@@ -14,7 +14,7 @@ console.log(services)
             {/* <div className="card-img">
               <img src="/images/design.png" width="200"/>
             </div> */}
-            <div>
+            {/* <div> */}
               <div className='card-details'>
                 <div className='grid grid-two-col'>
                   <p>{curEle.provider}</p>
@@ -24,7 +24,7 @@ console.log(services)
                 <p>{curEle.description}</p>
               </div>
             </div>
-          </div>
+          // </div>
         )
       })}
     </div>
