@@ -25,13 +25,21 @@
 body {
   margin: 0;
   padding: 0;
+  display: block;
+  /* place-items: center;
+  justify-content: center;
+  min-height: 100vh; */
+  background-color: var(--background);
+  color: var(--text-color);
+}
+
+.centered-section {
   display: flex;
   place-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: var(--background);
-  color: var(--text-color);
 }
+
 
 a {
   font-weight: 500;

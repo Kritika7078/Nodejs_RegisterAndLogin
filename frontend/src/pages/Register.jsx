@@ -69,7 +69,7 @@ export const Register = () => {
     <>
       <section>
         <main>
-          {/* <div className="section-registration"> */}
+          <div className="centered-section">
             <div className="container grid grid-two-cols">
               {/* <div className="registration-image reg-img">
                 <img
@@ -130,7 +130,7 @@ export const Register = () => {
                 </form>
               </div>
             </div>
-          {/* </div> */}
+          </div>
         </main>
       </section>
     </>
