@@ -114,6 +114,7 @@ body {
 
 .mb-3 {
   margin-top: 3rem;
+  margin-bottom: 3rem;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: var(--shadow-light);
